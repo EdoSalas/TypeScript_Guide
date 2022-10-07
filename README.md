@@ -1,6 +1,4 @@
-[![Beta Tech](https://betasolutions.tech/assets/img/LogoBeta.png)]()
-***
-## Beta Eventos
+## TypeScript Guide
 [![Release](https://img.shields.io/badge/Platform-TypeScript-blue)]()
 [![Language](https://img.shields.io/badge/Languaje-NodeJS-brightgreen)]()
 [![Language](https://img.shields.io/badge/Command-npm-lightgrey)]()
@@ -32,6 +30,21 @@ npm install -g typescript
 ```
 
 Init TypeScript:
+
+```bash
+tsc --init
+```
+
+If you use Windows and it generates an error, follow these steps
+
+```bash
+Get-ExecutionPolicy -list
+```
+```bash
+Set-ExecutionPolicy -Scope CurrentUser unrestricted
+```
+
+And try again
 
 ```bash
 tsc --init

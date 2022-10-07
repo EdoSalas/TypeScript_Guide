@@ -1,0 +1,31 @@
+{
+  "name": "beta_eventos_api",
+  "description": "<p align=\"center\"> \t<a href=\"https://betasolutions.tech\"> \t\t<img \t\t\theight=\"175\" \t\t\talt=\"The Lounge\" \t\t\tsrc=\"https://betasolutions.tech/assets/img/LogoBeta.png\"> \t</a> </p>",
+  "version": "1.0.0",
+  "main": "src/app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon",
+    "buildDoc": "apidoc -i src/api/routes/ -o ./apidoc -t ./apidoc/template",
+    "clearCache": "git rm -r --cached node_modules",
+    "clearModules": "git commit -m 'removing node_modules'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Beta-Tech-Costa-Rica/BETA-EVENTOS-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.14",
+    "copy": "^0.3.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.20"
+  },
+  "bugs": {
+    "url": "https://github.com/Beta-Tech-Costa-Rica/BETA-EVENTOS-API/issues"
+  },
+  "homepage": "https://github.com/Beta-Tech-Costa-Rica/BETA-EVENTOS-API#readme"
+}
