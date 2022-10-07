@@ -7,4 +7,5 @@ app.set('port', config.BACKEND_PORT || 4002);
 //Routes
 
 const port = app.get('port');
-app.listen(port,  () => console.log(`Server listen on port: ${port}`));
+const separator = "---------------------------------"
+app.listen(port,  () => console.log(`${separator}\n🔥 Server listen on port: ${port} 🔥\n${separator}`));
