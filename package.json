@@ -1,7 +1,7 @@
 {
-  "name": "beta_eventos_api",
-  "description": "<p align=\"center\"> \t<a href=\"https://betasolutions.tech\"> \t\t<img \t\t\theight=\"175\" \t\t\talt=\"The Lounge\" \t\t\tsrc=\"https://betasolutions.tech/assets/img/LogoBeta.png\"> \t</a> </p>",
+  "name": "typescript_guide",
   "version": "1.0.0",
+  "description": "Guide to use TypeScript",
   "main": "src/app.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,20 +12,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Beta-Tech-Costa-Rica/BETA-EVENTOS-API.git"
+    "url": "git+https://github.com/EdoSalas/TypeScript_Guide.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdoSalas/TypeScript_Guide/issues"
+  },
+  "homepage": "https://github.com/EdoSalas/TypeScript_Guide#readme",
   "dependencies": {
     "@types/express": "^4.17.14",
-    "copy": "^0.3.2",
+    "apidoc": "^0.28.1",
     "dotenv": "^16.0.3",
     "express": "^4.18.1",
     "nodemon": "^2.0.20"
-  },
-  "bugs": {
-    "url": "https://github.com/Beta-Tech-Costa-Rica/BETA-EVENTOS-API/issues"
-  },
-  "homepage": "https://github.com/Beta-Tech-Costa-Rica/BETA-EVENTOS-API#readme"
+  }
 }
