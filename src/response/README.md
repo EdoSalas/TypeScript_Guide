@@ -11,12 +11,11 @@ touch BaseResponse.ts
 Into [BaseResponse.ts](BaseResponse.ts) paste the following code
 ```ts
 export default class BaseResponse {
-    success: Boolean;
-    message: String;
-    description: String;
-    data: Object;
+    private success?: Boolean;
 
-    constructor(message: String, description: String, data: Object) {
+    constructor(private message?: String, 
+                private description?: String, 
+                private data?: Object) {
         this.success = true;
         this.message = message;
         this.description = description;
@@ -32,11 +31,10 @@ touch ResponseError.ts
 Into [ResponseError.ts](ResponseError.ts) paste the following code
 ```ts
 export default class ResponseError {
-    success: Boolean;
-    message: String;
-    description: String;
-
-    constructor(message: String, description: String) {
+    private success?: Boolean;
+    
+    constructor(private message?: String, 
+                private description?: String) {
         this.success = false;
         this.message = message;
         this.description = description;
@@ -44,4 +42,8 @@ export default class ResponseError {
 }
 ```
 
-Go to [src](../)
+Go to [src](../) to continue
+
+***
+[![Powered by](https://img.shields.io/badge/Powered%20by-Eduardo%20Salas-blue)]()
+***

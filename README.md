@@ -9,6 +9,7 @@
 - [Dependences](#dependences)
 - [Estructura](#estructura)
 - [Configurations](#configurations)
+- [DataBase](#database)
 
 ## Install
 Install with [npm](https://www.npmjs.com/):
@@ -89,16 +90,27 @@ Create build folder
 ```bash
 mkdir build
 ```
+
 Go to [src](src) folder
 
 ## Configurations
+Create file .env
+```bash
+touch .env
+```
+
+Into .env file, you can configure any global variable, this file not push in git for security. Example:
+```env
+PORT = 4001
+```
+
 Create file .gitignore
 ```bash
 touch .gitignore
 ```
 
 Into [.gitignore](.gitignore) paste the following code
-```.gitignore
+```gitignore
 .env
 node_modules/*
 ```
@@ -130,3 +142,15 @@ Run app
 ```bash
 npm start
 ```
+
+## DataBase
+Create docker folder for create a database
+```bash
+mkdir docker
+```
+
+Go to [docker](docker) folder
+
+***
+[![Powered by](https://img.shields.io/badge/Powered%20by-Eduardo%20Salas-blue)]()
+***

@@ -18,8 +18,13 @@ if (envFound.error) {
 }
 
 export default {
-    //variable: process.env.related variable
+    /* variable: process.env.related variable. Example:
+    PORT: process.env.PORT */
 }
 ``` 
 
-Go to [src](../)
+Go to [src](../) to continue
+
+***
+[![Powered by](https://img.shields.io/badge/Powered%20by-Eduardo%20Salas-blue)]()
+***
