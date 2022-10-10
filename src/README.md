@@ -20,15 +20,15 @@ mkdir response
 mkdir routes
 ```
 
-Go to [config](src/config) folder
+Go to [config](config) folder
 
-Go to [response](src/response/) folder
+Go to [response](response) folder
 
 Create app.ts file
 ```bash
 touch app.ts
 ```
-Into [app](src/app.ts) paste the following code
+Into [app](app.ts) paste the following code
 ```ts
 import express from "express";
 import config from "./config/config";
