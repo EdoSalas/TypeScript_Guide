@@ -42,4 +42,4 @@ const port = app.get('port');
 app.listen(port,  () => console.log(`Server listen on port ${port}`));
 ```
 
-Go to [home directory](/TypeScript_Guide)
+Go to [home directory](https://github.com/EdoSalas/TypeScript_Guide)
