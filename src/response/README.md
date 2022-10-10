@@ -8,7 +8,7 @@ Create BaseResponse.ts file
 touch BaseResponse.ts
 ```
 
-Into [BaseResponse.ts](src/response/BaseResponse.ts) paste the following code
+Into [BaseResponse.ts](BaseResponse.ts) paste the following code
 ```ts
 export default class BaseResponse {
     success: Boolean;
@@ -29,7 +29,7 @@ Create BaseResponse.ts file
 touch ResponseError.ts
 ```
 
-Into [ResponseError.ts](src/response/ResponseError.ts) paste the following code
+Into [ResponseError.ts](ResponseError.ts) paste the following code
 ```ts
 export default class ResponseError {
     success: Boolean;

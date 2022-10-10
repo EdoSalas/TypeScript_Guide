@@ -8,7 +8,7 @@ Create config.ts file
 touch config.ts
 ```
 
-Into [config.ts](src/config/config.ts) paste the following code
+Into [config.ts](config.ts) paste the following code
 ```ts
 import dotenv from 'dotenv';
 
