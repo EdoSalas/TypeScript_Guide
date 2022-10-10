@@ -1,9 +1,14 @@
-Into [config](src/config) folder create config file
+## TypeScript Guide
+[![Release](https://img.shields.io/badge/Platform-TypeScript-blue)]()
+[![Language](https://img.shields.io/badge/Languaje-NodeJS-brightgreen)]()
+[![Language](https://img.shields.io/badge/Command-npm-lightgrey)]()
+
+Create config.ts file
 ```bash
 touch config.ts
 ```
 
-Into [config](src/config/config.ts) paste the following code
+Into [config.ts](src/config/config.ts) paste the following code
 ```ts
 import dotenv from 'dotenv';
 
@@ -16,3 +21,5 @@ export default {
     //variable: process.env.related variable
 }
 ``` 
+
+Go to [src](../)
