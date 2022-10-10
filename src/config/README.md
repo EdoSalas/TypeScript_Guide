@@ -22,4 +22,4 @@ export default {
 }
 ``` 
 
-Go to [src](../)
+Go to [src](../README.md#L25)

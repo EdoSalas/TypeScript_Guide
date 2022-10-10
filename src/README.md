@@ -42,4 +42,4 @@ const port = app.get('port');
 app.listen(port,  () => console.log(`Server listen on port ${port}`));
 ```
 
-Go to [home directory](../)
+Go to [home directory](../README.md)
