@@ -22,4 +22,4 @@ export default {
 }
 ``` 
 
-Go to [src](../src)
+Go to [src](/src)
