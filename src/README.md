@@ -25,11 +25,15 @@ mkdir routes
 
 Go to [config](config) folder
 
+Go to [controller](controller) folder
+
 Go to [database](database) folder
 
 Go to [model](model) folder
 
 Go to [response](response) folder
+
+Go to [routes](routes) folder
 
 Create app.ts file
 ```bash
@@ -47,6 +51,8 @@ app.set('port', config.BACKEND_PORT);
 app.set('database', config.DATABASE_PORT);
 
 //Routes
+import users from "./routes/user";
+
 
 const port = app.get('port');
 const database = app.get('database');
@@ -57,6 +63,7 @@ try {
     console.log(`${separator}\n💾 Database listen on port: ${database} 💾\n${separator}`);
     app.listen(port,  () =>
     console.log(`🔥 Server listen on port:   ${port} 🔥\n${separator}`));
+    app.use('/api/users', users);
 } catch (err) {
     console.log(`${separator}\n☠️❗ An error occurred ☠️❗\n${err}\n${separator}`);
 };

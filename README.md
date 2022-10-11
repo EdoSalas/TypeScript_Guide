@@ -10,6 +10,7 @@
 - [Estructura](#estructura)
 - [Configurations](#configurations)
 - [DataBase](#database)
+- [Run](#run)
 
 ## Install
 Install with [npm](https://www.npmjs.com/):
@@ -80,9 +81,12 @@ Install [Apidoc](https://www.npmjs.com/package/apidoc/v/0.28.1)
 npm i apidoc@0.28.1 --save
 ```
 
-Install [TypeORM](https://orkhan.gitbook.io/typeorm/readme#installation)
+Install [TypeORM](https://typeorm.io)
 ```bash
 npm i typeorm --save
+```
+```bash
+npm i class-transformer --save
 ```
 ```bash
 npm i reflect-metadata --save
@@ -154,10 +158,6 @@ Into [tsconfig.json](tsconfig.json#L52) find `outDir`, usually line 52
 "outDir": "./dist",
 ```
 
-Run app
-```bash
-npm start
-```
 
 ## DataBase
 Create docker folder for create a database
@@ -175,6 +175,12 @@ Into [tsconfig.json](tsconfig.json#L17) find `experimentalDecorators`, usually l
 Into [tsconfig.json](tsconfig.json#L18) find `emitDecoratorMetadata`, usually line 18 and discomment this line
 ```json
 "emitDecoratorMetadata": true,
+```
+
+## Run
+Run app
+```bash
+npm start
 ```
 
 ***

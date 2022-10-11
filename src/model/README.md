@@ -18,25 +18,30 @@ touch user.ts
 Into [user.ts](user.ts) paste the following code
 ```ts
 import { Entity, Column, PrimaryGeneratedColumn } from "typeorm";
+import { Expose } from "class-transformer";
 import status from "./enums/status";
 
 @Entity()
 export default class User {
-    @PrimaryGeneratedColumn()
-    id?: Number;
+    @PrimaryGeneratedColumn({ name: "pk_user"})
+    @Expose()
+    id?: number;
 
-    @Column({ type: "varchar", nullable: false })
-    name?: String;
+    @Column({ name: "name", type: "varchar", nullable: false })
+    @Expose()
+    name?: string;
 
-    @Column({ type: "date", nullable: false })
-    date_of_birth?: Date;
+    @Column({ name: "date_of_birth", type: "date", nullable: false })
+    @Expose()
+    dof?: Date;
 
-    @Column({ type: "varchar", nullable: false })
-    email?: String;
+    @Column({ name: "email", type: "varchar", nullable: false })
+    @Expose()
+    email?: string;
 
-    @Column({ type: "integer", enum: status, default: status.ACTIVE})
-    status?: Number;
-
+    @Column({ name: "status", type: "integer", enum: status, default: status.ACTIVE})
+    @Expose()
+    status?: number;
 }
 ``` 
 
