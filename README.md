@@ -27,7 +27,7 @@ npm init -y
 Install TypeScript:
 
 ```bash
-npm i -g typescript
+npm i -g typescript --save
 ```
 
 Init TypeScript:
@@ -54,30 +54,46 @@ tsc --init
 ## Dependences
 Install Node for TypeScript
 ```bash
-npm i -g ts-node
+npm i -g ts-node --save
 ```
 
 Install Express
 ```bash
-npm i express
+npm i express --save
 ```
 ```bash
-npm i @types/express
+npm i @types/express --save-dev
 ```
 
 Install Nodemon
 ```bash
-npm i nodemon
+npm i nodemon --save
 ```
 
 Install Dotenv
 ```bash
-npm i dotenv
+npm i dotenv --save
 ```
 
 Install [Apidoc](https://www.npmjs.com/package/apidoc/v/0.28.1)
 ```bash
-npm i apidoc@0.28.1
+npm i apidoc@0.28.1 --save
+```
+
+Install [TypeORM](https://orkhan.gitbook.io/typeorm/readme#installation)
+```bash
+npm i typeorm --save
+```
+```bash
+npm i reflect-metadata --save
+```
+```bash
+npm i @types/node --save-dev
+```
+
+In this case install postgresql connection
+```bash
+npm i pg --save
 ```
 
 ## Estructura
@@ -150,6 +166,16 @@ mkdir docker
 ```
 
 Go to [docker](docker) folder
+
+Into [tsconfig.json](tsconfig.json#L17) find `experimentalDecorators`, usually line 17 and discomment this line
+```json
+"experimentalDecorators": true,
+```
+
+Into [tsconfig.json](tsconfig.json#L18) find `emitDecoratorMetadata`, usually line 18 and discomment this line
+```json
+"emitDecoratorMetadata": true,
+```
 
 ***
 [![Powered by](https://img.shields.io/badge/Powered%20by-Eduardo%20Salas-blue)]()

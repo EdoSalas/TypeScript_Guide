@@ -6,5 +6,7 @@ export default class ResponseError {
         this.success = false;
         this.message = message;
         this.description = description;
+
+        console.log(`☠️❗ An error occurred ☠️❗\n${message}\n${description}`);
     }
 }

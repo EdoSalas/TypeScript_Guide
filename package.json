@@ -15,17 +15,23 @@
     "url": "git+https://github.com/EdoSalas/TypeScript_Guide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Eduardo Salas Cerdas",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/EdoSalas/TypeScript_Guide/issues"
   },
   "homepage": "https://github.com/EdoSalas/TypeScript_Guide#readme",
   "dependencies": {
-    "@types/express": "^4.17.14",
     "apidoc": "^0.28.1",
     "dotenv": "^16.0.3",
     "express": "^4.18.1",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "pg": "^8.8.0",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.10"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/node": "^18.8.3"
   }
 }
