@@ -3,6 +3,12 @@
 [![Language](https://img.shields.io/badge/Languaje-NodeJS-brightgreen)]()
 [![Language](https://img.shields.io/badge/Command-npm-lightgrey)]()
 
+Docker needs to be installed, follow the steps described on the official [Docker page](https://docs.docker.com/engine/install/)
+
+- [Windows](https://docs.docker.com/desktop/install/windows-install/)
+- [Linux](https://docs.docker.com/desktop/install/mac-install/)
+- [Mac](https://docs.docker.com/desktop/install/linux-install/)
+
 Create .env file
 ```bash
 touch .env
