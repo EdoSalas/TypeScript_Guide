@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon",
-    "buildDoc": "apidoc -i src/api/routes/ -o ./apidoc -t ./apidoc/template",
+    "buildDoc": "apidoc -i src/routes/ -o ./apidoc -t ./apidoc/template",
     "clearCache": "git rm -r --cached node_modules",
     "clearModules": "git commit -m 'removing node_modules'"
   },
