@@ -188,6 +188,8 @@ For generate Documentation use
 npm run buildDoc
 ```
 
+To see Documentation generated open [index.html](/apidoc/index.html) file in your browser
+
 ***
 [![Powered by](https://img.shields.io/badge/Powered%20by-Eduardo%20Salas-blue)]()
 ***
