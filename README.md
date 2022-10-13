@@ -183,6 +183,11 @@ Run app
 npm start
 ```
 
+For generate Documentation use
+```bash
+npm run buildDoc
+```
+
 ***
 [![Powered by](https://img.shields.io/badge/Powered%20by-Eduardo%20Salas-blue)]()
 ***

@@ -9,28 +9,31 @@ const router = Router();
 const userCtrl = new UserController();
 
 /**
- * @api {get} /api/users/
- * @apiVersion 1.0.0
  * @apiGroup User
+ * @apiVersion 1.0.0
+ * @apiName Get All Users
+ * @api {get} /api/users/
  * @apiDescription Obtain all users
- * @apiExample {curl} Example usage:
- *      curl -i http://localhost:4041/api/users/
+ * @apiExample {json} Example usage:
+ * {
+ *      http://localhost:4001/api/users/
+ * }
+ * @apiSampleRequest http://localhost:4041/api/users/
  * @apiSuccess {Number} id Id of the User.
  * @apiSuccess {String} name Name of the User.
  * @apiSuccess {Date} dof Date of birth of the User.
  * @apiSuccess {String} email Email of the User.
  * @apiSuccess {Number} status Status of the User.
  * @apiSuccessExample {json} Success-Response:
- *      HTTP/1.1 200 OK
- *      [
- *          {
- *              "id": 1,
- *              "name": Eduardo Salas,
- *              "dof": 12/12/1995,
- *              "email": esalas95@outlook.com
- *              "status": 1
- *          }
- *      ]
+ * [
+ *      {
+ *          "id": 1,
+ *          "name": Eduardo Salas,
+ *          "dof": 12/12/1995,
+ *          "email": esalas95@outlook.com
+ *          "status": 1
+ *      }
+ * ]
  */
 router.get('/', async (req, res) => {
     try {
